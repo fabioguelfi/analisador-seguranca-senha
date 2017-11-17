@@ -28,7 +28,13 @@ $(function () {
             forca += 25;
         }
 
-        $('#forca').html('Força: ' + forca);
+        if (forca >= 75) {
+            var aceita = 'Aceita';
+        } else {
+            var aceita = 'Não Aceita';
+        }
+
+        $('#forca').html('Força: ' + forca + '(' + txt +') - '+aceita);
 
     });
 });
