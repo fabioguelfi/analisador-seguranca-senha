@@ -4,11 +4,6 @@ $(function () {
         var txt = $(this).val();
         var forca = 0;
 
-        // letras
-        // numeros
-        // caracteres especiais
-        // numero minimo
-
         if (txt.length >= 7) {
             forca += 25;
         }
@@ -34,7 +29,7 @@ $(function () {
             var aceita = 'Não Aceita';
         }
 
-        $('#forca').html('Força: ' + forca + '(' + txt +') - '+aceita);
+        $('#forca').html('Força : ' + forca + ' (' + txt +') - '+aceita);
 
     });
 });
